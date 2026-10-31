@@ -130,6 +130,24 @@ export const UI = {
     RETURN_REFRESH: "Connect onboarding was interrupted. You can continue when ready.",
     ERROR: "Could not reach Connect onboarding. Please try again.",
     UNAVAILABLE: "Connect payouts are not available in this environment.",
+    WITHDRAW_TITLE: "Withdraw earnings",
+    WITHDRAW_DESCRIPTION:
+      "Cash out accrued ledger earnings to your Express account. On-chain fragment payouts stay the default rail.",
+    WITHDRAW_BALANCE: "Available earnings",
+    WITHDRAW_HELD: "Held for in-flight withdrawals",
+    WITHDRAW_AMOUNT_LABEL: "Amount (USDC)",
+    WITHDRAW_METHOD_LABEL: "Payout method",
+    WITHDRAW_BANK: "Bank payout",
+    WITHDRAW_STABLECOIN: "Stablecoin (USDC)",
+    WITHDRAW_CTA: "Withdraw",
+    WITHDRAW_SUCCESS: "Withdrawal submitted — funds are moving to your Express account.",
+    WITHDRAW_ERROR: "Could not complete the withdrawal. Your earnings were not cleared.",
+    WITHDRAW_NEED_READY: "Finish Connect onboarding before withdrawing.",
+    WITHDRAW_EMPTY: "No accrued earnings available to withdraw.",
+    WITHDRAW_LIMITS:
+      "Limits: US Connect platform; individuals/sole proprietors only; NY and HI individuals excluded from stablecoin payouts; companies not supported for stablecoin yet.",
+    WITHDRAW_STABLECOIN_NOTE:
+      "Stablecoin cash-out requires Stripe preview access. Set preferred currency to USDC in the Express Dashboard after Transfer.",
   },
   NAV: {
     DASHBOARD: "Dashboard",

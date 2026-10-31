@@ -44,4 +44,8 @@ export const BILLING = {
   /** Settings return paths for Account Link callbacks. */
   CONNECT_RETURN_PATH: "/settings?connect=return",
   CONNECT_REFRESH_PATH: "/settings?connect=refresh",
+  /** Connect ledger off-ramp (#111). */
+  CONNECT_WITHDRAW_BANK: "bank",
+  CONNECT_WITHDRAW_STABLECOIN: "stablecoin",
+  CONNECT_WITHDRAW_CURRENCY: "usd",
 } as const;
