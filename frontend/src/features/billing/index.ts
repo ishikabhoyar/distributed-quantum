@@ -3,6 +3,7 @@ export { CreditsPanel } from "./components/credits-panel";
 export {
   ConnectPayoutsCard,
   ConnectPayoutsPanel,
+  ConnectWithdrawCard,
 } from "./components/connect-payouts-panel";
 export { UpgradeButton } from "./components/upgrade-button";
 export { useUpgrade, useBillingPortal, useCheckoutReturn } from "./hooks/use-billing";
@@ -13,9 +14,12 @@ export {
   useConnectOverview,
   useConnectReturn,
 } from "./hooks/use-connect";
+export { useConnectWithdraw, useEarningsOverview } from "./hooks/use-withdraw";
 export type {
   ConnectOverview,
   ConnectPayoutStatus,
   CreditOffer,
   CreditsOverview,
+  EarningsOverview,
+  WithdrawMethod,
 } from "./types";
