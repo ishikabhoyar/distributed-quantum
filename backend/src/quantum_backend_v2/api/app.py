@@ -33,6 +33,7 @@ from quantum_backend_v2.api.routers.agent import router as agent_router
 from quantum_backend_v2.api.routers.chains import build_chains_router
 from quantum_backend_v2.api.routers.circuits import build_circuits_router
 from quantum_backend_v2.api.routers.credits import build_credits_router
+from quantum_backend_v2.api.routers.earnings import build_earnings_router
 from quantum_backend_v2.api.routers.enrollment import build_enrollment_router
 from quantum_backend_v2.api.routers.financial import build_financial_router
 from quantum_backend_v2.api.routers.options import build_options_router
@@ -239,6 +240,12 @@ def create_app(
             build_credits_router(
                 ledger_service=ledger_service,
                 circuit_job_cost=settings.circuit_job_credit_cost,
+                billing_internal_secret=settings.billing_internal_secret,
+            )
+        )
+        app.include_router(
+            build_earnings_router(
+                ledger_service=ledger_service,
                 billing_internal_secret=settings.billing_internal_secret,
             )
         )

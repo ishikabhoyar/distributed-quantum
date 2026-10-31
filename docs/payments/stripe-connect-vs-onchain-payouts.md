@@ -83,6 +83,13 @@ Compare paying worker earnings through **Stripe Connect stablecoin payouts** aga
 3. Gate Connect stablecoin on: preview access approved, fee sheet from Stripe, and non-US platform strategy documented (or accepted as US-only).  
 4. Keep all chain ids / USDC addresses behind the **chain registry** (#2); never hardcode Stripe’s network as a substitute for registry networks.
 
+### Connect off-ramp implementation notes (#111)
+
+- Earnings live on a dedicated ledger account `earnings:{user_id}` (never prepaid job credits).
+- Withdrawal flow: hold → Stripe Transfer (idempotent) → capture on success / release on definite failure / keep hold if uncertain.
+- Country / entity limits (US platform; individuals/sole proprietors; NY/HI excluded from stablecoin; no company stablecoin yet) are surfaced in Settings UI copy.
+- Stablecoin method is gated by `STRIPE_CONNECT_STABLECOIN_PAYOUTS`; workers still configure USDC in the Express Dashboard.
+
 This is “worker’s choice” at cash-out time, not “two competing settlement systems per fragment.”
 
 ---
