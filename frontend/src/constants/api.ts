@@ -11,6 +11,7 @@ export const API = {
     CONNECT: "/api/billing/connect",
     CONNECT_ONBOARD: "/api/billing/connect/onboard",
     CONNECT_DASHBOARD: "/api/billing/connect/dashboard",
+    CONNECT_WITHDRAW: "/api/billing/connect/withdraw",
   },
   DASHBOARD: {
     ROOT: "/api/dashboard",
