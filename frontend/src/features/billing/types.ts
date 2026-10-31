@@ -13,6 +13,18 @@ export interface ConnectOverview {
   dashboardAvailable: boolean;
 }
 
+export type WithdrawMethod = "bank" | "stablecoin";
+
+export interface EarningsOverview {
+  available: string;
+  held: string;
+  accountId: string;
+  /** Stablecoin Connect payouts are opt-in (#111). */
+  stablecoinEnabled: boolean;
+  connectStatus: ConnectPayoutStatus;
+  connectedAccountId: string | null;
+}
+
 /** A credit pack as offered in the UI. */
 export interface CreditOffer {
   priceId: string;
