@@ -113,6 +113,42 @@ export const UI = {
     CHECKOUT_CANCELLED: "Checkout cancelled. You have not been charged.",
     ERROR: "Could not load credits. Please try again.",
   },
+  CONNECT: {
+    TITLE: "Worker payouts (Connect)",
+    DESCRIPTION:
+      "Optional Stripe Express onboarding for bank or stablecoin cash-out. On-chain earnings still work if you skip this.",
+    STATUS_NOT_STARTED: "Not set up",
+    STATUS_PENDING: "Pending",
+    STATUS_READY: "Payout ready",
+    STATUS_UNAVAILABLE: "Connect is not enabled",
+    ONBOARD_CTA: "Set up Connect payouts",
+    CONTINUE_CTA: "Continue onboarding",
+    DASHBOARD_CTA: "Open Express Dashboard",
+    SKIP_NOTE:
+      "Skipping Connect does not block on-chain worker earnings (pay-per-fragment).",
+    RETURN_SUCCESS: "Connect onboarding updated — status will refresh in a moment.",
+    RETURN_REFRESH: "Connect onboarding was interrupted. You can continue when ready.",
+    ERROR: "Could not reach Connect onboarding. Please try again.",
+    UNAVAILABLE: "Connect payouts are not available in this environment.",
+    WITHDRAW_TITLE: "Withdraw earnings",
+    WITHDRAW_DESCRIPTION:
+      "Cash out accrued ledger earnings to your Express account. On-chain fragment payouts stay the default rail.",
+    WITHDRAW_BALANCE: "Available earnings",
+    WITHDRAW_HELD: "Held for in-flight withdrawals",
+    WITHDRAW_AMOUNT_LABEL: "Amount (USDC)",
+    WITHDRAW_METHOD_LABEL: "Payout method",
+    WITHDRAW_BANK: "Bank payout",
+    WITHDRAW_STABLECOIN: "Stablecoin (USDC)",
+    WITHDRAW_CTA: "Withdraw",
+    WITHDRAW_SUCCESS: "Withdrawal submitted — funds are moving to your Express account.",
+    WITHDRAW_ERROR: "Could not complete the withdrawal. Your earnings were not cleared.",
+    WITHDRAW_NEED_READY: "Finish Connect onboarding before withdrawing.",
+    WITHDRAW_EMPTY: "No accrued earnings available to withdraw.",
+    WITHDRAW_LIMITS:
+      "Limits: US Connect platform; individuals/sole proprietors only; NY and HI individuals excluded from stablecoin payouts; companies not supported for stablecoin yet.",
+    WITHDRAW_STABLECOIN_NOTE:
+      "Stablecoin cash-out requires Stripe preview access. Set preferred currency to USDC in the Express Dashboard after Transfer.",
+  },
   NAV: {
     DASHBOARD: "Dashboard",
     ANALYTICS: "Analytics",

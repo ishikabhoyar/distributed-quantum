@@ -8,6 +8,8 @@ export const QUERY_KEYS = {
   },
   billing: {
     credits: () => ["billing", "credits"] as const,
+    connect: () => ["billing", "connect"] as const,
+    earnings: () => ["billing", "earnings"] as const,
   },
   dashboard: {
     all: () => ["dashboard"] as const,
