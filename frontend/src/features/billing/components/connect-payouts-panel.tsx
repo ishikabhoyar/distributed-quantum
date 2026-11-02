@@ -70,7 +70,8 @@ export function ConnectPayoutsCard({
             {showOnboard ? (
               <Button
                 variant="outline"
-                disabled={onboarding || status === BILLING.CONNECT_STATUS_UNAVAILABLE}
+                // showOnboard already excludes unavailable; only gate on in-flight onboard.
+                disabled={Boolean(onboarding)}
                 onClick={onOnboard}
               >
                 {status === BILLING.CONNECT_STATUS_PENDING
